@@ -11,6 +11,7 @@ h3 {
 }
 .hero-section {
   min-height: 600px;
+  padding-top: 50px;   
   padding-bottom: 80px;
 }
 .hero-section h1 {
@@ -93,11 +94,6 @@ h3 {
     background-color 0.25s ease,
     box-shadow 0.25s ease,
     transform 0.25s ease;
-}
-
-/* phone icon */
-.btn-phone i {
-  font-size: 30px;
 }
 
 /* hover → lime WhatsApp green */
@@ -208,11 +204,7 @@ body {
   line-height: 1;
   white-space: nowrap;
 }
-@media (min-width: 1200px) {
-  .hero-section .container {
-    max-width: 1400px;   
-  }
-}
+
 .hero-section .col-lg-6:last-child {
   display: flex;
   justify-content: flex-end;
@@ -681,6 +673,91 @@ body {
 }
 
 /* Mobile */
+
+/* About us */
+/* =========================
+   ABOUT HERO
+========================= */
+
+.about-hero {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+/* Image sizing handled here (not reused) */
+.about-hero__image-wrap {
+  width: 100%;
+  max-width: 520px;   /* matches Figma density */
+}
+
+.about-hero__image-wrap img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/*what defines */
+/* =========================
+   DEFINES US
+========================= */
+
+.defines-us {
+  padding: 80px 0;
+  background: #fafafa;
+}
+
+/* Card */
+.defines-card {
+  position: relative;
+  height: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.defines-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay */
+.defines-overlay {
+  position: absolute;
+  inset: 0;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.3),
+    transparent
+  );
+
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.defines-overlay h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.defines-overlay p {
+  font-size: 14px;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+@media (min-width: 1200px) {
+  .hero-section .container {
+    max-width: 1400px;   
+  }
+}
 @media (max-width: 768px) {
   .footer-bottom {
     flex-direction: column;
