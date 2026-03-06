@@ -1225,3 +1225,16 @@ body {
     aspect-ratio: 9 / 16;  /* Full portrait */
   }
 }
+@media (max-width: 576px) {
+
+  .navbar-logo {
+    height: 34px;     /* smaller logo */
+    transform: scale(1);  /* remove zoom */
+  }
+
+  .brand-wrap {
+    gap: 6px;         /* tighter spacing */
+    height: auto;
+  }
+
+}

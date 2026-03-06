@@ -96,40 +96,13 @@
           Enter your trip details and our team will contact you shortly to confirm your ride.
           </p>
          <form id="bookingForm" class="mt-4">
-<!-- Name -->
-  <input
-    type="text"
-    id="customerName"
-    name="name"
-    class="form-control mb-3"
-    placeholder="Your Name"
-    required
-  >
 
-  <!-- Mobile -->
-  <input
-    type="tel"
-    id="mobile"
-    name="mobile"
-    class="form-control mb-3"
-    placeholder="Mobile Number"
-    required
-  >
-  <!-- Ride Type -->
+<!-- Ride Type -->
   <select id="rideType" name="rideType" class="form-control mb-3" required>
     <option value="">Ride Type</option>
     <option value="local">Local (within city)</option>
     <option value="outstation">Outstation</option>
     <option value="airport">Airport Transfer</option>
-  </select>
-
-  <!-- Vehicle -->
-  <select id="vehicle" name="vehicle" class="form-control mb-3" required>
-    <option value="">Vehicle Type</option>
-  <option value="Luxury Executive">Luxury</option>
-  <option value="Comfort Sedan">Sedan</option>
-  <option value="Spacious SUV">SUV</option>
-  <option value="Premium Group Travel">Premium Group Travel</option>
   </select>
 
   <!-- Pickup City -->
@@ -178,9 +151,34 @@
     required
   >
 
+  <!-- Vehicle -->
+  <select id="vehicle" name="vehicle" class="form-control mb-3" required>
+    <option value="">Vehicle Type</option>
+  <option value="Luxury Executive">Luxury</option>
+  <option value="Comfort Sedan">Sedan</option>
+  <option value="Spacious SUV">SUV</option>
+  <option value="Premium Group Travel">Premium Group Travel</option>
+  </select>
 
+  <!-- Name -->
+  <input
+    type="text"
+    id="customerName"
+    name="name"
+    class="form-control mb-3"
+    placeholder="Your Name"
+    required
+  >
 
-  
+  <!-- Mobile -->
+  <input
+    type="tel"
+    id="mobile"
+    name="mobile"
+    class="form-control mb-3"
+    placeholder="Mobile Number"
+    required
+  >
 
   <!-- Notes (optional) -->
   <textarea
@@ -205,7 +203,6 @@
     </div>
   </div>
 </section>
- 
 <!--Footer-->
 
 <footer class="site-footer ">
@@ -381,5 +378,7 @@ document.getElementById("bookingForm").addEventListener("submit", async function
   }
 });
 </script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
+

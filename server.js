@@ -155,6 +155,7 @@ if (!response.data.success) {
 
   } catch (err) {
     console.error(err);
+    console.log("BOOKING ERROR:");
     res.status(500).json({ success: false });
   }
 });
